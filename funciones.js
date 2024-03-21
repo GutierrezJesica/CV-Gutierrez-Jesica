@@ -19,3 +19,5 @@ var checkbox = document.querySelector('input[name=theme]');
     function descargarPDF(){
         window.open("https://drive.google.com/file/d/1R6P9FuYO9BN-3SxGfqpmzgoZeo1gbv2U/view?usp=drive_link")
     }
+
+

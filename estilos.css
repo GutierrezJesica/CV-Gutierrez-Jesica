@@ -273,7 +273,7 @@ label:active:after {
 	width: 30px;
 }
 
-// centering
+/* centering*/
 body {
 	display: flex;
 	justify-content: center;
