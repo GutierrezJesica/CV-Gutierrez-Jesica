@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilos.css">
     <script src="https://kit.fontawesome.com/da755e9270.js" crossorigin="anonymous"></script>
+    <script src="funciones.js"></script>
     <title>CV GUTIÉRREZ JESICA</title>
 </head>
 <body>
@@ -144,30 +145,5 @@
         <a href="https://ar.linkedin.com/in/jesicadelvallegutierrez"><i class="fa-brands fa-linkedin"></i></a>
     </div>
 </footer>
-<script>
-    var checkbox = document.querySelector('input[name=theme]');
-
-    checkbox.addEventListener('change', function() {
-        if(this.checked) {
-            trans()
-            document.documentElement.setAttribute('data-theme', 'dark')
-        } else {
-            trans()
-            document.documentElement.setAttribute('data-theme', 'light')
-        }
-    })
-
-    let trans = () => {
-        document.documentElement.classList.add('transition');
-        window.setTimeout(() => {
-            document.documentElement.classList.remove('transition');
-        }, 1000)
-    }
-    function descargarPDF(){
-        window.open("https://drive.google.com/file/d/1R6P9FuYO9BN-3SxGfqpmzgoZeo1gbv2U/view?usp=drive_link")
-    }
-
-
-</script>
     </body>
 </html>
