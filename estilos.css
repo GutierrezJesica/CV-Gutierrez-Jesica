@@ -349,8 +349,7 @@ main {
 }
 
 .timeline article {
-    padding-top: 1rem;
-    border-top: 1px solid var(--border);
+    padding-top: 0;
 }
 
 .timeline p {
