@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="light">
+<html lang="es" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,86 +11,94 @@
 </head>
 <body>
     <div class="contenedor">
-    <nav>
-        <a href="#sec1" alt="Nacimiento"><i class="fa-solid fa-cake-candles"></i></a>
-        <a href="#sec2" alt="Dirección"><i class="fa-solid fa-location-dot"></i></a>
-        <a href="#sec3" alt="Teléfono"><i class="fa-solid fa-phone"></i></a>
-        <a href="#sec4" alt="E-mail"><i class="fa-solid fa-envelope"></i></a>
+    <nav aria-label="Navegación del CV">
+        <a href="#sec1" aria-label="Perfil"><i class="fa-solid fa-user"></i><span class="visually-hidden">Perfil</span></a>
+        <a href="#sec2" aria-label="Experiencia profesional"><i class="fa-solid fa-briefcase"></i><span class="visually-hidden">Experiencia profesional</span></a>
+        <a href="#sec3" aria-label="Competencias y tecnologías"><i class="fa-solid fa-lightbulb"></i><span class="visually-hidden">Competencias y tecnologías</span></a>
+        <a href="#sec4" aria-label="Educación"><i class="fa-solid fa-graduation-cap"></i><span class="visually-hidden">Educación</span></a>
         <input type="checkbox" id="switch" name="theme"/><label for="switch">Toggle</label>
     </nav>
     
-<div class="container">
+<main class="container">
         <header>
-<!-- CV-NOMBRE-->
             <div class="cv-header">
             <div class="cv-nombre">
                 <h1>JESICA GUTIÉRREZ</h1>
-                <h2>DISEÑADORA EN COMUNICACIÓN VISUAL</h2>
-                <h2>DESARROLLADORA FRONT-END • TESTER QA</h2>
-                
+                <h2>Frontend Developer | UX/UI Design | Accessibility</h2>
+                <h2>Product Thinking | Technical SEO | WordPress</h2>
             </div>
-<!-- CV-IMAGEN-->
             <div class="cv-img">
-                <img src="img/cv-foto.jpg" alt="Foto de perfil">
+                <img src="img/cv-foto.jpg" alt="Foto de Jesica Gutierrez">
             </div>
         </div>
         </header>
 
-        <div class="sobre-mi">
-            <p>Me caracterizo por ser una persona activa, responsable y resuelta. Actualmente me estoy capacitando en testing automatizado y JAVA, dos aspectos que ayudarán a mí crecimiento como Designer UX | UI.</p>
-            <p>Mí objetivo actual es adquirir experiencia laboral, para que el día de mañana pueda ser un integrante valioso en diferentes equipos de trabajo.</p>
-        </div>
+    <section class="sobre-mi" id="sec1">
+        <h3>PERFIL PROFESIONAL</h3>
+        <p>Mi recorrido profesional comenzó en el diseño en comunicación visual y evolucionó hacia el diseño UX/UI y el desarrollo frontend. Ese camino me permitió desarrollar una mirada integral sobre los productos digitales, comprendiendo cómo las decisiones de diseño, experiencia de usuario, accesibilidad, SEO y desarrollo se complementan para construir mejores soluciones.</p>
+        <p>Disfruto de colaborar con equipos multidisciplinarios para entender los problemas desde diferentes perspectivas y aportar principalmente en la implementación frontend, contribuyendo a crear productos funcionales, accesibles y alineados con las necesidades de las personas y los objetivos del negocio.</p>
     </section>
 
-<!-- EXPERIENCIA LABORAL-->
-    <div class="caja" id="sec2">
-            <h3>EXPERIENCIA LABORAL</h3>
+    <section class="contacto" aria-label="Datos de contacto">
+        <div class="info"><i class="fa-solid fa-location-dot" aria-hidden="true"></i><p>La Plata, Buenos Aires, Argentina</p></div>
+        <div class="info"><i class="fa-solid fa-envelope" aria-hidden="true"></i><p><a href="mailto:jesica89@gmail.com">jesica89@gmail.com</a></p></div>
+        <div class="info"><i class="fa-solid fa-phone" aria-hidden="true"></i><p><a href="tel:+5491138927113">+54 9 1138927113</a></p></div>
+        <div class="info"><i class="fa-brands fa-linkedin" aria-hidden="true"></i><p><a href="https://linkedin.com/in/gutierrezjesica">linkedin.com/in/gutierrezjesica</a></p></div>
+    </section>
+
+    <section class="caja" id="sec2">
+            <h3>EXPERIENCIA PROFESIONAL</h3>
             <div class="col-3">
                 <div class="col1">
-                    <h5>Utilindo (2022)</h5>
-                        <p>Desarrollo de sitio web y diseño de piezas para redes sociales.</p>
+                    <h5>Luz Consulting</h5>
+                    <p><strong>Frontend Developer</strong> | 2024-2026</p>
+                    <p>Desarrollo de sitios web con HTML, CSS, JavaScript y WordPress.</p>
+                    <p>Colaboración en decisiones de UX/UI junto a equipos multidisciplinarios.</p>
                 </div>
                 <div class="col2">
-                    <h5>Ganesha (2021)</h5>
-                        <p>Desarrollo de sitio web y manejo de redes sociales.</p>
+                    <h5>Fundación Comparlante</h5>
+                    <p><strong>Frontend Developer</strong> (Voluntariado) | 2023-2024</p>
+                    <p>Desarrollo de sitio institucional con foco en accesibilidad digital y WCAG.</p>
+                    <p>Adaptación de propuestas visuales para mejorar jerarquía, estructura y navegación.</p>
                 </div>
                 <div class="col3">
-                    <h5>Mamis Shop (2020)</h5>
-                        <p>Desarrollo de tienda online, usando tienda nube.</p>
+                    <h5>Logros clave</h5>
+                    <p>Implementé buenas prácticas de HTML semántico y accesibilidad.</p>
+                    <p>Participé en un modelo de negocio de suscripción para servicios web.</p>
+                    <p>Trabajé con equipos de diseño, producto y desarrollo para soluciones inclusivas.</p>
                 </div>
             </div>
-            </div>
-<!-- CONOCIMIENTOS-->
+    </div>
+
     <div class="caja2" id="sec3">
-            <h3>CONOCIMIENTOS</h3>
+            <h3>COMPETENCIAS Y TECNOLOGÍAS</h3>
             <div class="col-3">
                 <div class="col1">
-                    <p>• HTML5</p>
-                    <p>• CSS3</p>
-                    <p>• JavaScript</p>
-                    <p>• JAVA</p>
+                    <p>• Frontend Development</p>
+                    <p>• UX/UI Design</p>
+                    <p>• Product Thinking</p>
+                    <p>• Responsive Design</p>
                 </div>
                 <div class="col2">
-                    <p>• Wordpress</p>
-                    <p>• Testing de Accesibilidad</p>
-                    <p>• Pruebas de Software</p>
-                    <p>• Diseño UX/UI</p>
+                    <p>• Web Accessibility (WCAG)</p>
+                    <p>• Technical SEO</p>
+                    <p>• Information Architecture</p>
+                    <p>• Cross-functional Collaboration</p>
                 </div>
                 <div class="col3">
-                    <p>• Ingles</p>
-                    <p>• Figma</p>
-                    <p>• GITHUB</p>
-                    <p>• Pack Adobe & Office</p>
+                    <p>• HTML5, CSS3, JavaScript, React</p>
+                    <p>• WordPress</p>
+                    <p>• Figma, Photoshop, Illustrator</p>
+                    <p>• Git, GitHub, VS Code, Jira, Trello</p>
                 </div>
             </div>
         </div>
 
-<!-- EDUCACIÓN-->
     <div class="caja" id="sec4">
         <h3>EDUCACIÓN</h3>
         <div class="col-2">
             <div class="col4">
-                <h5>Programación en JAVA </h5>
+                <h5>Programación en JAVA</h5>
                     <p>CILSA ONG (en proceso)</p>
                 <h5>Testing Funcional y Accesibilidad Web II</h5>
                     <p>CILSA ONG (en proceso)</p>
@@ -101,9 +109,9 @@
             </div>
             <div class="col5">
                 <h5>Colaborando en Proyectos con GIT y GITHUB</h5>
-                    <p>Fundación Itgrarte  (Diciembre 2022)</p>
+                    <p>Fundación Itgrarte (Diciembre 2022)</p>
                 <h5>Primeros Pasos del Desarrollo Front-end</h5>
-                    <p>Argentina programa (Diciembre 2022)</p>
+                    <p>Argentina Programa (Diciembre 2022)</p>
                 <h5>Responsive Web Design</h5>
                     <p>FreeCodeCamp (2022)</p>
                 <h5>Diseño en Comunicación Visual</h5>
@@ -112,30 +120,27 @@
         </div>
     </div>
 
-
-<!-- DATOS ADICIONALES-->
     <div class="caja2">
-        <h3>DATOS ADICIONALES</h3>
+        <h3>PROYECTO DESTACADO</h3>
         <div class="col-2">
             <div class="col4">
-                <h5>Cuento con CUD</h5>
-                <p>No requiero de apoyo</p>
+                <h5>Transformación hacia un servicio web por suscripción</h5>
+                <p>Analicé el modelo de negocio, definí la propuesta de valor y diseñé la estructura de planes de suscripción.</p>
             </div>
             <div class="col5">
-                <h5>Disponibilidad horaria</h5>
+                <h5>Mi participación</h5>
+                <p>Redacté contenidos comerciales, diseñé materiales de ventas e implementé la solución en la web.</p>
             </div>
         </div>
     </div>
 </div>
 
-
-<!-- FOOTER-->
 <footer>
     <button class="pdf" onclick="descargarPDF()"><i class="fa-solid fa-file-pdf"></i>Descargar CV</button>
     <div class="iconos">
         <a href="https://github.com/GutierrezJesica"><i class="fa-brands fa-github"></i></a>
         <a href="https://behance.net/gutierrezjesica"><i class="fa-brands fa-behance"></i></a>
-        <a href="https://ar.linkedin.com/in/jesicadelvallegutierrez"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://linkedin.com/in/gutierrezjesica"><i class="fa-brands fa-linkedin"></i></a>
     </div>
 </footer>
     </body>
