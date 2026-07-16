@@ -396,6 +396,67 @@ main {
     color: var(--muted);
 }
 
+.section-heading {
+    max-width: 760px;
+    margin-bottom: 1.5rem;
+}
+
+.section-heading h2 {
+    margin-bottom: 0.75rem;
+}
+
+.section-heading p {
+    color: var(--muted);
+}
+
+.work-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1rem;
+}
+
+.work-card {
+    position: relative;
+    display: flex;
+    min-height: 260px;
+    flex-direction: column;
+    gap: 0.85rem;
+    padding: 1.25rem;
+    overflow: hidden;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    background: var(--surface-muted);
+}
+
+.work-card::before {
+    content: "";
+    position: absolute;
+    inset: 0 0 auto;
+    height: 5px;
+    background: var(--detail);
+}
+
+.work-card h3 {
+    font-size: 1.15rem;
+}
+
+.work-card p {
+    color: var(--muted);
+}
+
+.work-card a {
+    width: fit-content;
+    margin-top: auto;
+    font-weight: var(--font-weight-bold);
+}
+
+.work-type {
+    color: var(--accent);
+    font-size: var(--font-size-small);
+    font-weight: var(--font-weight-bold);
+    text-transform: uppercase;
+}
+
 .site-footer {
     display: flex;
     align-items: center;
@@ -419,6 +480,7 @@ main {
     }
 
     .skills-grid,
+    .work-grid,
     .timeline,
     .contact-grid {
         grid-template-columns: 1fr;
