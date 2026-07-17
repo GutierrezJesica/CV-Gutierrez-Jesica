@@ -271,12 +271,17 @@ main {
 }
 
 .contact-section,
-#competencias {
+#experiencia,
+#proyecto {
     background: var(--surface-muted);
     margin-right: calc(clamp(1.5rem, 5vw, 4rem) * -1);
     margin-left: calc(clamp(1.5rem, 5vw, 4rem) * -1);
     padding-right: clamp(1.5rem, 5vw, 4rem);
     padding-left: clamp(1.5rem, 5vw, 4rem);
+}
+
+#competencias {
+    background: var(--surface);
 }
 
 .contact-grid {
@@ -295,10 +300,6 @@ main {
     display: block;
     color: var(--text);
     font-weight: var(--font-weight-bold);
-}
-
-#perfil{
-    border-bottom: 1px solid rgba(191, 219, 247, 0.28);
 }
 
 .job,
