@@ -11,7 +11,6 @@
     --surface-muted: rgba(31, 122, 140, 0.28);
     --text: var(--palette-text);
     --muted: var(--palette-shadow);
-    
     --accent: var(--palette-accent);
     --accent-strong: var(--palette-accent);
     --detail: var(--palette-detail);
@@ -121,11 +120,16 @@ h1 {
 h2 {
     font-size: var(--font-size-heading);
     color: var(--text);
+    margin-bottom: 1.5rem!important; /* 24px */
 }
 
 h3 {
     font-size: var(--font-size-base);
     color: var(--text);
+}
+
+#experiencia h3 {
+    font-size: 1.3rem;
 }
 
 .skip-link {
