@@ -629,16 +629,6 @@ main {
     border: 0 !important;
 }
 
-.site-footer {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 1rem;
-    padding: 1.5rem clamp(1.5rem, 5vw, 4rem);
-    border-top: 1px solid var(--border);
-    color: var(--muted);
-}
-
 .block {
     border-radius: 8px;
     background: linear-gradient(135deg, rgba(29,127,145,0.95), rgba(31,122,140,0.8));
@@ -692,7 +682,7 @@ main {
     justify-content: space-between;
     gap: 1rem;
     padding: 1.5rem clamp(1.5rem, 5vw, 4rem);
-    border-top: 1px solid var(--border);
+    border-top: 1px solid rgba(191, 219, 247, 0.28);
     color: var(--muted);
 }
 
