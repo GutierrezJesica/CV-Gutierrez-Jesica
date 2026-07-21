@@ -275,9 +275,7 @@ hr {
     background: var(--surface-muted);
 }
 
-#competencias {
-    background: var(--surface);
-}
+
 
 .contact-grid {
     display: grid;
@@ -314,6 +312,7 @@ hr {
     display: flex;
     justify-content: space-between;
     gap: 1rem;
+    margin-bottom: 1rem;
 }
 
 .job header p,
@@ -406,7 +405,6 @@ hr {
     display: block;
     border-radius: 10px;
     object-fit: cover;
-    box-shadow: 0 12px 28px rgba(2, 43, 58, 0.18);
 }
 
 .project-content {
